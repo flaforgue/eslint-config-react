@@ -1,7 +1,17 @@
+import tsEslint from "typescript-eslint";
 import reactPlugin from "eslint-plugin-react";
 import reactHooksPlugin from "eslint-plugin-react-hooks";
 
 export default [
+  {
+    languageOptions: {
+      parser: tsEslint.parser,
+      parserOptions: {
+        projectService: true,
+        tsconfigRootDir: import.meta.dirname,
+      }
+    },
+  },
   reactPlugin.configs.flat.recommended,
   reactPlugin.configs.flat["jsx-runtime"],
   reactHooksPlugin.configs["recommended-latest"],

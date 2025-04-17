@@ -7,7 +7,7 @@ npm install -D @flaforgue/eslint-config-react
 yarn add -D @flaforgue/eslint-config-react
 ```
 
-## Usage
+## Usage (flat config)
 
 Use in your `eslint.config.js` file:
 
@@ -19,7 +19,7 @@ export default defineConfig([
   // ...
   {
     files: [
-      "**/*.tsx",
+      "**/*.{ts,tsx}",
     ],
     extends: [reactConfig],
 
