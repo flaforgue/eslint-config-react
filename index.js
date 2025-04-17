@@ -16,7 +16,9 @@ export default [
   reactPlugin.configs.flat["jsx-runtime"],
   reactHooksPlugin.configs["recommended-latest"],
   {
-    files: ["**/*.tsx"],
+    files: [
+      "**/*.{ts,tsx}",
+    ],
     settings: {
       react: {
         version: 'detect',
@@ -26,9 +28,9 @@ export default [
       "react": reactPlugin,
     },
     rules: {
-      "react/jsx-closing-tag-location": ["warn"],
+      "react/jsx-closing-tag-location": ["error"],
       "react/jsx-tag-spacing": [
-        "warn",
+        "error",
         {
           closingSlash: "never",
           beforeSelfClosing: "always",
@@ -36,21 +38,21 @@ export default [
           beforeClosing: "never",
         },
       ],
-      "react/jsx-curly-brace-presence": ["warn", "never"],
-      "react/jsx-curly-newline": ["warn", "consistent"],
-      "react/jsx-first-prop-new-line": ["warn", "multiline"],
+      "react/jsx-curly-brace-presence": ["error", "never"],
+      "react/jsx-curly-newline": ["error", "consistent"],
+      "react/jsx-first-prop-new-line": ["error", "multiline"],
       "react/self-closing-comp": [
-        "warn",
+        "error",
         {
           component: true,
           html: true,
         },
       ],
-      "react/jsx-indent-props": ["warn", 2],
-      "react/jsx-closing-bracket-location": ["warn", "tag-aligned"],
-      "react/jsx-tag-spacing": ["warn"],
+      "react/jsx-indent-props": ["error", 2],
+      "react/jsx-closing-bracket-location": ["error", "tag-aligned"],
+      "react/jsx-tag-spacing": ["error"],
       "react/jsx-one-expression-per-line": [
-        "warn",
+        "error",
         {
           allow: "single-child",
         },
