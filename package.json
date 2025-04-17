@@ -1,0 +1,30 @@
+{
+  "name": "@flaforgue/eslint-config-react",
+  "version": "1.0.0",
+  "description": "Eslint shared configuration for react projects",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flaforgue/eslint-config-react.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "typescript",
+    "react",
+    "preact"
+  ],
+  "author": "flaforgue",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/flaforgue/eslint-config-react/issues"
+  },
+  "homepage": "https://github.com/flaforgue/eslint-config-react#readme",
+  "peerDependencies": {
+    "eslint": ">= 9"
+  },
+  "dependencies": {
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^5.2.0"
+  }
+}
