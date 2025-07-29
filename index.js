@@ -1,6 +1,7 @@
 import tsEslint from "typescript-eslint";
 import reactPlugin from "eslint-plugin-react";
 import reactHooksPlugin from "eslint-plugin-react-hooks";
+import tanstackQueryPlugin from "@tanstack/eslint-plugin-query"
 
 export default [
   {
@@ -15,6 +16,7 @@ export default [
   reactPlugin.configs.flat.recommended,
   reactPlugin.configs.flat["jsx-runtime"],
   reactHooksPlugin.configs["recommended-latest"],
+  ...tanstackQueryPlugin.configs['flat/recommended'],
   {
     files: [
       "**/*.{ts,tsx}",
