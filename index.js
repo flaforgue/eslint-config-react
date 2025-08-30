@@ -32,6 +32,7 @@ export default [
       "better-tailwindcss": betterTailwindcssPlugin
     },
     rules: {
+      "@stylistic/jsx-max-props-per-line": ["error", { "maximum": 2 }],
       ...betterTailwindcssPlugin.configs["recommended-error"].rules,
       'better-tailwindcss/enforce-consistent-class-order': [
         'warn',
@@ -69,7 +70,6 @@ export default [
           beforeClosing: "never",
         },
       ],
-      "react/jsx-tag-spacing": ["error"],
       "react/self-closing-comp": [
         "error",
         {
