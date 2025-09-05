@@ -23,7 +23,7 @@ export default [
     plugins: {
       "react": reactPlugin,
       "better-tailwindcss": betterTailwindcssPlugin,
-      "stylistic": stylisticPlugin,
+      "@stylistic": stylisticPlugin,
     },
     rules: {
       ...betterTailwindcssPlugin.configs["recommended-error"].rules,
@@ -70,7 +70,7 @@ export default [
           html: true,
         },
       ],
-      "stylistic/jsx-max-props-per-line": [
+      "@stylistic/jsx-max-props-per-line": [
         "error",
         {
           "maximum": {
