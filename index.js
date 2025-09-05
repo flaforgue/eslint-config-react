@@ -1,19 +1,10 @@
-import tsEslint from "typescript-eslint";
+import typescriptConfig from "@flaforgue/eslint-config-typescript";
 import reactPlugin from "eslint-plugin-react";
 import reactHooksPlugin from "eslint-plugin-react-hooks";
 import tanstackQueryPlugin from "@tanstack/eslint-plugin-query"
 import betterTailwindcssPlugin from "eslint-plugin-better-tailwindcss";
 
 export default [
-  {
-    languageOptions: {
-      parser: tsEslint.parser,
-      parserOptions: {
-        projectService: true,
-        tsconfigRootDir: import.meta.dirname,
-      }
-    },
-  },
   reactPlugin.configs.flat.recommended,
   reactPlugin.configs.flat["jsx-runtime"],
   reactHooksPlugin.configs["recommended-latest"],
@@ -21,6 +12,9 @@ export default [
   {
     files: [
       "**/*.{ts,tsx}",
+    ],
+    extends: [
+      typescriptConfig
     ],
     settings: {
       react: {
