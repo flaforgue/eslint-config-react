@@ -1,3 +1,4 @@
+import stylisticPlugin from '@stylistic/eslint-plugin'
 import typescriptConfig from "@flaforgue/eslint-config-typescript";
 import reactPlugin from "eslint-plugin-react";
 import reactHooksPlugin from "eslint-plugin-react-hooks";
@@ -21,7 +22,8 @@ export default [
     },
     plugins: {
       "react": reactPlugin,
-      "better-tailwindcss": betterTailwindcssPlugin
+      "better-tailwindcss": betterTailwindcssPlugin,
+      "stylistic": stylisticPlugin,
     },
     rules: {
       ...betterTailwindcssPlugin.configs["recommended-error"].rules,
@@ -68,7 +70,7 @@ export default [
           html: true,
         },
       ],
-      "@stylistic/jsx-max-props-per-line": [
+      "stylistic/jsx-max-props-per-line": [
         "error",
         {
           "maximum": {
