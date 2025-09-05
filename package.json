@@ -1,6 +1,6 @@
 {
   "name": "@flaforgue/eslint-config-react",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Eslint shared configuration for react projects",
   "main": "index.js",
   "type": "module",
