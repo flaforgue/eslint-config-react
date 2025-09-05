@@ -26,7 +26,6 @@ export default [
       "better-tailwindcss": betterTailwindcssPlugin
     },
     rules: {
-      "@stylistic/jsx-max-props-per-line": ["error", { "maximum": 2 }],
       ...betterTailwindcssPlugin.configs["recommended-error"].rules,
       'better-tailwindcss/enforce-consistent-class-order': [
         'warn',
@@ -70,6 +69,15 @@ export default [
           component: true,
           html: true,
         },
+      ],
+      "@stylistic/jsx-max-props-per-line": [
+        "error",
+        {
+          "maximum": {
+            "single": 3,
+            "multi": 1,
+          }
+        }
       ],
     },
   },
