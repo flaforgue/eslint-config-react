@@ -9,12 +9,10 @@ export default [
   reactPlugin.configs.flat["jsx-runtime"],
   reactHooksPlugin.configs["recommended-latest"],
   ...tanstackQueryPlugin.configs['flat/recommended'],
+  ...typescriptConfig,
   {
     files: [
       "**/*.{ts,tsx}",
-    ],
-    extends: [
-      typescriptConfig
     ],
     settings: {
       react: {
