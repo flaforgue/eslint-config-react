@@ -1,6 +1,6 @@
 {
   "name": "@flaforgue/eslint-config-react",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "description": "Eslint shared configuration for react projects",
   "main": "index.js",
   "type": "module",
@@ -27,7 +27,7 @@
     "typescript": ">=4.8.4 <6.0.0"
   },
   "dependencies": {
-    "@flaforgue/eslint-config-typescript": "^1.0.14",
+    "@flaforgue/eslint-config-typescript": "^1.0.15",
     "@stylistic/eslint-plugin": "^5.2.2",
     "@tanstack/eslint-plugin-query": "^5.81.2",
     "eslint-plugin-better-tailwindcss": "^3.7.2",
